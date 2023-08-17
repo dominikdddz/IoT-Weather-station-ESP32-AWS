@@ -1,5 +1,21 @@
-﻿# IoT Weather Station 
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Features](#features)
+* [Architecture](#architecture)
+* [Workspaces in Grafana](#workspaces-in-grafana)
+
+## General info
 The IoT Device use FreeRTOS system to managment sensors device and send data to Cloud Service. IoT project collect weather data (temperature, humidity and pressure) and send to AWS, where data are stored, process and visualization in Grafana service. 
+
+## Technologies
+Project is created with:
+ * C/C++ Language
+ * Arduino IDE
+ * Amazon Cloud Service (AWS)
+ * microcontroller ESP32
+ * weather sensors BMP280 and DHT22
+ * OLED display SSD1306
 
 ## Features
  - Measurement of temperature (BMP280), humidity and atmospheric pressure (DHT22)
