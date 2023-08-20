@@ -34,6 +34,6 @@ ESP32 connects to the *AWS IoT Core* using wifi and send weather data every few 
 
 ## Workspaces in Grafana
 First workspace show all connected IoT Weather Station, localization and logs. From this we may move to Weather Station Workspace
-![Main workspace from Grafana](/grafanav2.png?raw=true "Main workspace from Grafana")
+![Main workspace from Grafana](/grafanaMain.png?raw=true "Main workspace from Grafana")
 Second Workspace show actualy weather data from selected Weather Station
-![Second workspace from Grafana](/grafanav5.png?raw=true "Second workspace from Grafana")
+![Second workspace from Grafana](/grafanaDevice.png?raw=true "Second workspace from Grafana")
