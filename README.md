@@ -6,7 +6,7 @@
 * [Workspaces in Grafana](#workspaces-in-grafana)
 
 ## General info
-The repository contains the code created for my engineering thesis. The topic of engineering thesis is: "Using FreeRTOS and a cloud platform to build a weather station"
+The repository contains the code created for my engineering thesis. The topic of engineering thesis is: "Using FreeRTOS and a cloud platform to build a weather station".
 
 The IoT Device use FreeRTOS system to managment sensors device and send data to Cloud Service. IoT project collect weather data (temperature, humidity and pressure) and send to AWS, where data are stored, process and visualization in Grafana service. 
 
@@ -28,12 +28,12 @@ Project is created with:
  - all features on device working on FreeRTOS system
 
 ## Architecture
-ESP32 connects to the *AWS IoT Core* using wifi and send weather data every few minutes. Data is send using *IoT MQTT Protocol* and after are saved in *AWS Timestream* database service. After that data are visualization in Grafana services using SQL querry to database
+ESP32 connects to the *AWS IoT Core* using wifi and send weather data every few minutes. Data is send using *IoT MQTT Protocol* and after are saved in *AWS Timestream* database service. After that data are visualization in Grafana services using SQL querry to database.
 
 ![Architecture IoT Weather Station](/Esp32_architecture.png?raw=true "Architecture IoT Weather Station")
 
 ## Workspaces in Grafana
-First workspace show all connected IoT Weather Station, localization and logs. From this we may move to Weather Station Workspace
+First workspace show all connected IoT Weather Station, localization and logs.
 ![Main workspace from Grafana](/grafanaMain.png?raw=true "Main workspace from Grafana")
-Second Workspace show actualy weather data from selected Weather Station
+Second Workspace show actualy weather data from selected Weather Station.
 ![Second workspace from Grafana](/grafanaDevice.png?raw=true "Second workspace from Grafana")
