@@ -6,6 +6,8 @@
 * [Workspaces in Grafana](#workspaces-in-grafana)
 
 ## General info
+The repository contains the code created for my engineering thesis. The topic of engineering thesis is: "Using FreeRTOS and a cloud platform to build a weather station"
+
 The IoT Device use FreeRTOS system to managment sensors device and send data to Cloud Service. IoT project collect weather data (temperature, humidity and pressure) and send to AWS, where data are stored, process and visualization in Grafana service. 
 
 ## Technologies
