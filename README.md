@@ -14,7 +14,10 @@ The IoT Device use FreeRTOS system to managment sensors device and send data to 
 Project is created with:
  * C/C++ Language
  * Arduino IDE
- * Amazon Cloud Service (AWS)
+ * Amazon Cloud Service (AWS):
+   * AWS IoT Core to communication and connection with IoT Weather Station
+   * AWS Timestream to stored data in database service
+   * AWS Grafana to create workspace for display weather data
  * microcontroller ESP32
  * weather sensors BMP280 and DHT22
  * OLED display SSD1306
@@ -26,6 +29,7 @@ Project is created with:
  - saving data to memory if there is no access to the wifi network and sending them if the network is back
  - device location based on nearby wifi networks (google library)
  - all features on device working on FreeRTOS system
+ - managing IoT Weather Station and viewing weather data in AWS services
 
 ## Architecture
 ESP32 connects to the *AWS IoT Core* using wifi and send weather data every few minutes. Data is send using *IoT MQTT Protocol* and after are saved in *AWS Timestream* database service. After that data are visualization in Grafana services using SQL querry to database.
